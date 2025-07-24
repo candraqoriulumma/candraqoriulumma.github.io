@@ -138,41 +138,74 @@
     <!-- Akhir Projects -->
 
     <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
-                <div class="mb-3">
-                  <label for="pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control" id="pesan" rows="3"></textarea>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
-            </form>
-          </div>
-        </div>
+    <!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="row text-center mb-3">
+      <div class="col">
+        <h2>Contact Me</h2>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0d6efd"
-          fill-opacity="1"
-          d="M0,32L30,42.7C60,53,120,75,180,117.3C240,160,300,224,360,240C420,256,480,224,540,186.7C600,149,660,107,720,112C780,117,840,171,900,170.7C960,171,1020,117,1080,96C1140,75,1200,85,1260,90.7C1320,96,1380,96,1410,96L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="name" name="nama" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea class="form-control" id="pesan" name="pesan" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+          <div id="alertSukses" class="alert alert-success mt-3" style="display: none;">
+            ✅ Terima kasih! Pesan Anda sudah kami terima.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#0d6efd"
+      fill-opacity="1"
+      d="M0,32L30,42.7C60,53,120,75,180,117.3C240,160,300,224,360,240C420,256,480,224,540,186.7C600,149,660,107,720,112C780,117,840,171,900,170.7C960,171,1020,117,1080,96C1140,75,1200,85,1260,90.7C1320,96,1380,96,1410,96L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+    ></path>
+  </svg>
+</section>
+<!-- Akhir Contact -->
+
+<!-- Tambahkan ini di bawah sebelum </body> -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/PASTE_URL_WEBAPP/exec'; // Ganti dengan URL dari Apps Script kamu
+  const form = document.getElementById('contactForm');
+  const alertSukses = document.getElementById('alertSukses');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const data = {
+      nama: form.nama.value,
+      email: form.email.value,
+      pesan: form.pesan.value,
+    };
+
+    fetch(scriptURL, {
+      method: 'POST',
+      body: JSON.stringify(data),
+    })
+      .then(response => {
+        alertSukses.style.display = 'block';
+        form.reset();
+      })
+      .catch(error => alert('Gagal mengirim pesan. Coba lagi.'));
+  });
+</script>
     <!-- Akhir Contact -->
 
     <!-- Footer -->
