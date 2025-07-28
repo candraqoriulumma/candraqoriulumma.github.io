@@ -150,19 +150,22 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form id="contactForm">
-    <input type="text" name="nama" required placeholder="Nama" class="form-control mb-2" />
-    <input type="email" name="email" required placeholder="Email" class="form-control mb-2" />
-    <textarea name="pesan" required placeholder="Pesan" class="form-control mb-2"></textarea>
-    <button type="submit" class="btn btn-primary">Kirim</button>
-  </form>
-  <!-- Pesan sukses -->
-  <div id="alertSukses" class="alert alert-success mt-3 d-none">
-    ✅ Terima kasih! Pesan Anda sudah kami terima.
-  </div>
-</section>
+            <form action="https://script.google.com/macros/s/AKfycbzOIxgscIIHezX2IAljOMWcM4Gq7Gzv5dNclN4-gK1vOcOqCwSBImegWvwOl4DEQs82/exec" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Pesan</label>
+                  <textarea class="form-control" id="pesan" rows="3"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+              <div id="alertSukses" class="alert alert-success mt-3 d-none">✅ Terima kasih! Pesan Anda sudah kami terima.</div>
+            </form>
           </div>
         </div>
       </div>
