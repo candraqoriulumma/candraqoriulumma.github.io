@@ -1,13 +1,91 @@
-
-.jumbotron {
-    padding-top: 6rem;
-    background-color: #e2edff;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fce4ec;
+  color: #333;
 }
 
-#projects {
-    background-color: #e2edff;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-section {
-    padding-top: 5rem;
+.left-section, .right-section {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.intro {
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.biodata, .section {
+  background: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #d81b60;
 }
