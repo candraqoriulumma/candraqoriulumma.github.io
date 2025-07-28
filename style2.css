@@ -29,15 +29,18 @@ hr {
 .content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .left {
   flex: 1;
+  min-width: 280px;
 }
 
 .right {
   flex: 1;
+  min-width: 280px;
 }
 
 .left form {
@@ -47,15 +50,16 @@ hr {
 
 .left label {
   margin-top: 10px;
-  font-weight: bold;
+  margin-bottom: 5px;
+  font-weight: normal;
 }
 
 .left input,
 .left textarea {
   padding: 10px;
-  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 .left textarea {
@@ -63,18 +67,20 @@ hr {
   resize: vertical;
 }
 
-.left button {
-  margin-top: 15px;
-  padding: 10px;
-  background-color: black;
+.kirim-btn {
+  background-color: #007bff;
   color: white;
-  border: none;
-  cursor: pointer;
+  padding: 10px 20px;
   border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  width: fit-content;
 }
 
-.left button:hover {
-  background-color: #333;
+.kirim-btn:hover {
+  background-color: #0056b3;
 }
 
 .right h4,
