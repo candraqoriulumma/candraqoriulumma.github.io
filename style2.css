@@ -6,62 +6,131 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  line-height: 1.6;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   color: #333;
 }
 
-header {
-  background-color: #0d6efd;
-  color: white;
-  padding: 20px;
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+}
+
+.header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
+  border-top: 10px solid #0078d7;
+  padding-top: 20px;
 }
 
-header h1 {
-  font-size: 24px;
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 40px;
 }
 
-nav ul {
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #0078d7;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #0078d7;
+  display: inline-block;
+  padding-bottom: 2px;
+  margin-top: 25px;
+}
+
+p,
+li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+ul {
   list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  background: #0078d7;
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 5px 0 0;
+  font-size: 0.85rem;
+}
+.contact-form {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 2px solid #ccc;
+}
+
+.contact-form h2 {
+  font-size: 1.5rem;
+  color: #0078d7;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-nav a {
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0078d7;
+  outline: none;
+}
+
+button {
+  width: 120px;
+  padding: 10px;
+  background-color: #0078d7;
   color: white;
-  text-decoration: none;
-  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.hero {
-  padding: 60px 20px;
-  text-align: center;
-  background: linear-gradient(to right, #0d6efd, #6f42c1);
-  color: white;
-}
-
-section {
-  padding: 40px 20px;
-}
-
-#projects {
-  background-color: #e9ecef;
-}
-
-.project-card {
-  background: white;
-  padding: 20px;
-  margin-top: 20px;
-  border-left: 5px solid #0d6efd;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #343a40;
-  color: white;
+button:hover {
+  background-color: #005fa3;
 }
