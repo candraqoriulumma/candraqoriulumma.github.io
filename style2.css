@@ -64,3 +64,38 @@ ul {
 ul li {
   margin-bottom: 5px;
 }
+.kontak form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.kontak label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.kontak input,
+.kontak textarea {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.kontak button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.kontak button:hover {
+  background-color: #e91e63;
+}
