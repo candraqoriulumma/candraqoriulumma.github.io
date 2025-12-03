@@ -1,144 +1,176 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Batik Vohisma</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
-
-<style>
-  /* HERO IMAGE BATIK */
-  .hero-batik {
-    width: 100%;
-    max-height: 350px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-  }
-
-  .hero-batik img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  /* BUTTON JELAJAHI */
-  .btn-jelajah {
-    background: #f4b400;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
-    border: none;
-    font-weight: bold;
-  }
-
-  .btn-jelajah:hover {
-    background: #d89e00;
-    color: #fff;
-  }
-
-  /* BUTTON FORM KONTAK */
-  .btn-primary {
-    background-color: #6a1b9a !important;
-    border-color: #6a1b9a !important;
-    font-weight: bold;
-  }
-
-  .btn-primary:hover {
-    background-color: #4a136d !important;
-  }
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batik Nusantara - Halaman Lengkap</title>
+    <link rel="stylesheet" href="style3.css"> 
 </head>
-
 <body>
+    <header class="header">
+        <div class="container navbar">
+            <h1 class="logo">Batik Vohisma</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#beranda" class="active">Beranda</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#galeri">Galeri</a></li>
+                    <li><a href="#sejarah">Sejarah</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold text-purple">Batik Vohisma</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
-        <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sejarah">Sejarah</a></li>
-        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <main>
+        
+        <section id="beranda" class="hero-section home-hero">
+            <img src="batik-indonesia.jpg" alt="Background Batik Indonesia" class="hero-image">
+            
+            <div class="hero-content">
+                <h2>Batik Vohisma</h2>
+                <p>Warisam Budaya Dunia yang Membanggakan</p>
+                <button class="cta-button">Jelajahi Sekarang</button>
+            </div>
+        </section>
 
-<!-- HERO -->
-<section id="beranda" class="mt-5 pt-4 text-center">
-  <div class="hero-batik">
-    <img src="https://i.ibb.co.com/1MnPZ4h/batik.jpg" alt="Batik Nusantara">
-  </div>
+        
+        <section id="tentang">
+            <section class="hero-section sub-hero">
+                <div class="hero-content">
+                    <h2>Tentang Batik Nusantara</h2>
+                    <p>Melestarikan dan Memperkenalkan Batik Indonesia ke Dunia</p>
+                </div>
+            </section>
+            <section class="content-section container">
+                <div class="card about-card">
+                    <h2 class="section-title">Visi & Misi Kami</h2>
+                    <p>Visi: Menjadikan Batik Indonesia sebagai warisan budaya yang dikenal dan dicintai di seluruh dunia.</p>
+                    <p>Misi: (1) Mengedukasi masyarakat tentang filosofi batik. (2) Mendukung pengrajin lokal. (3) Mengadakan pameran internasional.</p>
+                </div>
+            </section>
+        </section>
+        
+        <section id="galeri">
+            <section class="hero-section sub-hero">
+                <div class="hero-content">
+                    <h2>Galeri Batik Nusantara</h2>
+                    <p>Jelajahi Keindahan Motif-motif Batik</p>
+                </div>
+            </section>
+            <section class="gallery-grid container">
+                <a href="#" class="gallery-item">
+                    <img src="umma1.jpeg" alt="Motif Parang Rusak">
+                    <div class="item-info">
+                        <h3>Batik Parang Rusak</h3>
+                        <p>Motif batik Parang Rusak diciptakan oleh Panembahan Senopati dan melambangkan keberanian, ketegaran, dan semangat juang tanpa henti untuk melawan hawa nafsu dan mencapai kesejahteraan, sebagaimana terinspirasi dari kegigihan ombak laut yang menghantam karang. Motif ini secara historis khusus digunakan oleh bangsawan dan raja untuk menunjukkan jiwa mulia yang mampu mengendalikan godaan dan berjuang melawan kejahatan. </p>
+                    </div>
+                </a>
+                
+                <a href="#" class="gallery-item">
+                    <img src="umma2.jpeg" alt="Motif Mega Mendung">
+                    <div class="item-info">
+                        <h3>Batik Mega Mendung</h3>
+                        <p>Batik Mega Mendung adalah motif batik khas dari Cirebon, Jawa Barat, yang menampilkan pola awan berlapis-lapis dan kaya makna filosofis, melambangkan ketenangan, kesabaran, dan kesuburan. Motif ini mencerminkan akulturasi budaya Tionghoa dan Islam, terlihat dari penggunaan warna-warna cerah seperti biru dan merah yang dikombinasikan dengan pengaruh Tiongkok. </p>
+                    </div>
+                </a>
 
-  <h1 class="fw-bold mt-4">Batik Vohisma</h1>
-  <p>Warisan Budaya Dunia yang Membanggakan</p>
+                <a href="#" class="gallery-item">
+                    <img src="umma3.jpeg" alt="Motif Kawung">
+                    <div class="item-info">
+                        <h3>Batik Kawung</h3>
+                        <p>Batik Kawung adalah motif batik Jawa tertua dengan bentuk geometris berupa bulatan-bulatan yang rapi, menyerupai buah aren atau kolang-kaling, yang melambangkan kesucian, kebijaksanaan, dan kesempurnaan. Motif ini memiliki nilai filosofis tinggi dan sejarah panjang di lingkungan keraton, serta merupakan simbol keseimbangan hidup, keteraturan, dan kontrol diri. </p>
+                    </div>
+                </a>
+                
+                <a href="#" class="gallery-item">
+                    <img src="truntum.jpg" alt="Motif Geometris">
+                    <div class="item-info">
+                        <h3>Batik Truntum</h3>
+                        <p>Batik Truntum adalah motif batik Jawa dari Keraton Surakarta yang melambangkan cinta abadi dan harapan, awalnya diciptakan oleh Kanjeng Ratu Beruk dari kesedihannya karena perhatian sang raja beralih. Motifnya berupa pola bintang atau bunga kecil yang menyebar, melambangkan cinta yang tumbuh kembali dan kesabaran untuk meraih kebahagiaan. Secara tradisional, motif ini digunakan oleh orang tua pengantin sebagai simbol restu dan berkah untuk masa depan cinta yang berkelanjutan. </p>
+                    </div>
+                </a>
 
-  <button class="btn-jelajah mt-3" onclick="document.getElementById('tentang').scrollIntoView({behavior:'smooth'})">
-    Jelajahi Sekarang
-  </button>
-</section>
+                <a href="#" class="gallery-item">
+                    <img src="sidomukti.jpg" alt="Motif Flora">
+                    <div class="item-info">
+                        <h3>Batik Sido Mukti</h3>
+                        <p>Batik Sidomukti adalah motif batik klasik dari Solo, Jawa Tengah, yang melambangkan harapan untuk meraih kebahagiaan, kemuliaan, dan kesejahteraan hidup. Berasal dari kata "sido" (jadi/menjadi) dan "mukti" (mulia/sejahtera), motif ini biasanya menggunakan pewarna alami soga (cokelat) dan banyak digunakan pada upacara perkawinan karena maknanya yang sakral. Ciri khasnya adalah motif floral yang indah, sering kali dengan ornamen kupu-kupu, dan merupakan pengembangan dari motif Sidomulyo.</p>
+                    </div>
+                </a>
+                                <a href="#" class="gallery-item">
+                    <img src="madura.jpg" alt="Motif Flora">
+                    <div class="item-info">
+                        <h3>Batik Madura</h3>
+                        <p>Batik Sidomukti adalah motif batik klasik dari Solo, Jawa Tengah, yang melambangkan harapan untuk meraih kebahagiaan, kemuliaan, dan kesejahteraan hidup. Berasal dari kata "sido" (jadi/menjadi) dan "mukti" (mulia/sejahtera), motif ini biasanya menggunakan pewarna alami soga (cokelat) dan banyak digunakan pada upacara perkawinan karena maknanya yang sakral. Ciri khasnya adalah motif floral yang indah, sering kali dengan ornamen kupu-kupu, dan merupakan pengembangan dari motif Sidomulyo.</p>
+                    </div>
+                </a>
+            </section>
+        </section>
 
-<!-- TENTANG -->
-<section id="tentang" class="mt-5 p-4 text-center">
-  <h2 class="fw-bold">Tentang Batik Nusantara</h2>
-  <p class="mt-2">Melestarikan dan Memperkenalkan Batik Indonesia ke Dunia</p>
-</section>
+        <section id="sejarah">
+            <section class="hero-section sub-hero">
+                <div class="hero-content">
+                    <h2>Sejarah Batik Indonesia</h2>
+                    <p>Menelusuri jejak warisan budaya yang telah diakui dunia</p>
+                </div>
+            </section>
 
-<!-- KONTAK -->
-<section id="kontak" class="p-4">
-  <h2 class="fw-bold mb-3">Hubungi Saya</h2>
+            <section class="content-section container">
+                <div class="card history-card">
+                    <p>Batik Indonesia adalah warisan budaya yang kaya, berawal dari tradisi seni melukis dengan malam (lilin) yang diaplikasikan menggunakan alat bernama canting pada kain, terutama di Pulau Jawa. Sejak abad ke-17, teknik membatik berkembang pesat dan awalnya menjadi seni eksklusif di kalangan bangsawan Keraton Yogyakarta dan Surakarta, di mana motif-motifnya (seperti Parang dan Kawung) kental dengan filosofi sakral dan status sosial. Seiring waktu, terutama setelah abad ke-19, batik mulai menyebar ke masyarakat umum dan wilayah pesisir. Di daerah seperti Pekalongan, Cirebon, dan Lasem, batik mengalami akulturasi dengan budaya asing (Tionghoa dan Eropa), menghasilkan Batik Pesisir dengan warna yang lebih cerah dan motif flora-fauna yang dinamis. Untuk memenuhi permintaan pasar, teknik Batik Cap ditemukan pada awal abad ke-20 sebagai alternatif dari Batik Tulis yang memakan waktu lama. Puncak pengakuan global terjadi pada 2 Oktober 2009, ketika UNESCO secara resmi menetapkan Batik Indonesia sebagai Warisan Kemanusiaan untuk Budaya Lisan dan Nonbendawi, menjadikannya identitas bangsa yang dibanggakan dan dirayakan setiap tahun sebagai Hari Batik Nasional. memiliki corak batik yang unik, mencerminkan filosofi, alam, dan budaya setempat. Batik bukan sekadar kain, tetapi juga simbol identitas dan kebanggaan bangsa.</p>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+    
+</main>
 
-  <form id="contactForm" action="https://script.google.com/macros/s/AKfycbzOIxgscIIHezX2IAljOMWcM4Gq7Gzv5dNclN4-gK1vOcOqCwSBImegWvwOl4DEQs82/exec" method="POST">
-
-    <div class="mb-3">
-      <label for="name" class="form-label">Nama Lengkap</label>
-      <input type="text" class="form-control" id="name" name="name" required />
-    </div>
-
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" name="email" required />
-    </div>
-
-    <div class="mb-3">
-      <label for="pesan" class="form-label">Pesan</label>
-      <textarea class="form-control" id="pesan" name="pesan" rows="3" required></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Kirim</button>
-
-    <div id="alertSukses" class="alert alert-success mt-3" style="display:none;">
-      ✅ Terima kasih! Pesan Anda sudah kami terima.
-    </div>
-
-  </form>
-</section>
-
-<!-- SCRIPT -->
-<script>
-  const form = document.getElementById('contactForm');
-  const alertBox = document.getElementById('alertSukses');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    fetch(form.action, { method: 'POST', body: new FormData(form)})
-      .then(() => {
-        alertBox.style.display = 'block';
-        form.reset();
-      })
-      .catch(error => console.error('Error!', error.message));
-  });
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <section id="kontak" class="contact-section">
+        <div class="container contact-grid">
+            
+            <div class="contact-form-container">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan Anda</label>
+                        <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button submit-button">Kirim Pesan</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h2 class="section-title-info">Informasi Kontak</h2>
+                <div class="info-item">
+                    <h3>Alamat</h3>
+                    <p>📍 Jl. Terusan Ikan Piranha Atas No.50, Tunjungsekar, Kec. Lowokwaru, Kota Malang, Jawa Timur 65142, Indonesia</p>
+                </div>
+                <div class="info-item">
+                    <h3>Telepon</h3>
+                    <p>📱 0341-478195</p>
+                </div>
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>📧 info@smkn5malang.sch.id</p>
+                </div>
+                </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Batik Nusantara. Lestarikan Budaya Indonesia 🇮🇩</p>
+        </div>
+    </footer>
 </body>
 </html>
