@@ -63,27 +63,54 @@
           </ul>
         </section>
         <section class="kontak">
-<h2>Hubungi Saya</h2>
-            <form action="https://script.google.com/macros/s/AKfycbzOIxgscIIHezX2IAljOMWcM4Gq7Gzv5dNclN4-gK1vOcOqCwSBImegWvwOl4DEQs82/exec" method="POST">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
-                <div class="mb-3">
-                  <label for="pesan" class="form-label">Pesan</label>
-                  <textarea class="form-control" id="pesan" rows="3"></textarea>
-                 <div class="mb-3">
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
-              <div id="alertSukses" class="alert alert-success mt-3 d-none">✅ Terima kasih! Pesan Anda sudah kami terima.</div>
-        </form>
-  </section>
+  <h2>Hubungi Saya</h2>
+
+  <form id="contactForm" action="https://script.google.com/macros/s/AKfycbzOIxgscIIHezX2IAljOMWcM4Gq7Gzv5dNclN4-gK1vOcOqCwSBImegWvwOl4DEQs82/exec" method="POST">
+    
+    <div class="mb-3">
+      <label for="name" class="form-label">Nama Lengkap</label>
+      <input type="text" class="form-control" id="name" name="name" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="pesan" class="form-label">Pesan</label>
+      <textarea class="form-control" id="pesan" name="pesan" rows="3" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kirim</button>
+
+    <!-- ALERT disembunyikan dulu -->
+    <div id="alertSukses" class="alert alert-success mt-3" style="display:none;">
+      ✅ Terima kasih! Pesan Anda sudah kami terima.
+    </div>
+
+  </form>
+</section>
+
+<!-- Script untuk menampilkan pesan sukses setelah submit -->
+<script>
+  const form = document.getElementById('contactForm');
+  const alertBox = document.getElementById('alertSukses');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // hentikan kirim default
+
+    fetch(form.action, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        alertBox.style.display = 'block'; // tampilkan alert sukses
+        form.reset(); // reset form
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
 </body>
 </html>
+
 
 
 
