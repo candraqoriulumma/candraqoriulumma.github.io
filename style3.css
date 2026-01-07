@@ -47,7 +47,7 @@ ul {
 
 .logo {
   font-size: 1.5rem;
-  color: #4b0082; /* Ungu Gelap */
+  color: #0d47a1; 
   font-weight: 700;
 }
 
@@ -69,8 +69,8 @@ ul {
 /* Penanda aktif di navigasi akan menjadi link yang sedang diklik pada satu halaman ini */
 .nav-links a:hover,
 .nav-links a.active {
-  color: #6a5acd; /* Ungu Sedang */
-  border-bottom: 2px solid #6a5acd;
+  color: #1e88e5;
+  border-bottom: 2px solid #1e88e5
 }
 
 /* === Hero Section (Area Banner Besar) === */
@@ -92,13 +92,13 @@ ul {
 .home-hero {
   /* SILAHKAN GANTI PATH GAMBAR DI BAWAH INI untuk background Beranda */
   background-image: url("img src='home-background-batik.jpg'");
-  background-color: #4b0082;
+  background-color: #0d47a1;
   padding: 150px 20px;
 }
 
 /* 2. Halaman Lain (Tentang, Galeri, Sejarah) - Gradien Ungu */
 .sub-hero {
-  background: linear-gradient(90deg, #6a5acd, #483d8b);
+  background: linear-gradient(90deg, #1e88e5, #1565c0);
   min-height: 250px;
   padding: 100px 20px;
 }
@@ -149,12 +149,12 @@ ul {
 }
 
 .section-title {
-  color: #4b0082;
+  color: #0d47a1;
   font-size: 1.8rem;
   margin-bottom: 10px;
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: 5px solid #6a5acd;
+  border-bottom: 5px solid #1e88e5;
   display: inline-block;
 }
 
@@ -211,7 +211,7 @@ ul {
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #0d47a1;
   color: #fff;
   text-align: center;
   padding: 20px 0;
